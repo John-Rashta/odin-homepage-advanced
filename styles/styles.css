@@ -65,6 +65,7 @@ h6 {
 /* basic layout and styling */
 .pageContainer {
     background-color: #fdba74;
+    padding: 0px 15vw;
 }
 header {
     padding: 3vw 5vw;
@@ -74,7 +75,7 @@ header {
     justify-content: center;
     background: rgb(8,145,178);
     background: linear-gradient(165deg, rgba(8,145,178,1) 65.5%, #e4e4e7 66%, rgba(255,255,255,1) 66.3%);
-    margin: 0px 15vw;
+    
     
 }
 .icon {
@@ -119,3 +120,7 @@ header {
 }
 
 
+img {
+  width: 30px;
+  height: auto;
+}
