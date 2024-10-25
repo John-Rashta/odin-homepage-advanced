@@ -65,16 +65,16 @@ h6 {
 /* basic layout and styling */
 .pageContainer {
     background-color: #fdba74;
-    padding: 0px 15vw;
+    
 }
 header {
-    padding: 3vw 5vw;
+    padding: 5vh 5vw;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     background: rgb(8,145,178);
-    background: linear-gradient(165deg, rgba(8,145,178,1) 65.5%, #e4e4e7 66%, rgba(255,255,255,1) 66.3%);
+    background: linear-gradient(168deg, rgba(8,145,178,1) 65.5%, #e4e4e7 66%, rgba(255,255,255,1) 66.3%);
     
     
 }
@@ -89,14 +89,16 @@ header {
     width: 25vw;
     height: auto;
     float: left;
+    anchor-name: --topImg;
 }
 
 .imgText {
     position: absolute;
     z-index: 2;
-    left: 8vw;
+    left: calc(2vw + anchor(left));
     font-size: 3vw;
-    top: 27vw;
+    top: anchor(--topImg 85%);
+    position-anchor: --topImg;
 }
 
 .topIconsContainer {
@@ -124,3 +126,46 @@ img {
   width: 30px;
   height: auto;
 }
+
+.midContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  grid-gap: 50px;
+}
+
+main {
+  padding: 10vh 5vw;
+  background-color: white;
+}
+
+footer {
+  padding: 5vh 5vw;
+  background-color: white;
+}
+
+.projectDescTop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProjectLinks {
+  display: flex;
+  gap: 1vw;
+}
+
+.projectImage {
+  font-size: 2.5rem;
+  padding: 50px;
+  text-align: center;
+}
+
+.botIcons {
+  display: flex;
+}
+
+@media (min-width: 1201px) {
+  .pageContainer {
+    padding: 0px calc((100vw - 1201px) / 2);
+  }
+}
+
