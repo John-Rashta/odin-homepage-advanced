@@ -282,7 +282,12 @@ h1,
   color: rgb(88, 87, 87);
 }
 
+@media (max-width: 324px) {
+  .imgText {
+    top: anchor(--topImg 67%);
+  }
 
+}
 @media (max-width: 575px) {
   header {
     display: flex;
