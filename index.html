@@ -10,7 +10,13 @@
 <body>
     <div class="pageContainer">
         <header>
-            <img class="topImage" src="images/halfdog.jpg" alt="">
+            <picture>
+                <source
+                    srcset="images/fulldog.jpg"
+                    media="(max-width: 575px)"
+                >
+                <img class="topImage" src="images/halfdog.jpg" alt="">
+            </picture>
             <div class="imgText">Ashley Williams</div>
             <div class="topText">
                 <h1 class="topTextTitle">About me</h1>
@@ -23,8 +29,8 @@
             </div>
         </header>
         <main>
-            <h1>My Work</h1>
             <div class="midContainer">
+                <h1>My Work</h1>
                 <div class="projectContainer">
                     <div class="projectImage">screenshot of project</div>
                     <div class="projectDesc">
@@ -106,18 +112,18 @@
             </div>
         </main>
         <footer>
-            <div>
+            <div class="botContainer">
                 <h1>Contact me</h1>
-                <p>Please get in touch if you think our work could be mutually beneficial!</p>
+                <p class="botExtraText">Please get in touch if you think our work could be mutually beneficial!</p>
                 <div>
                     <p>1234 Random Road</p>
                     <div>Random Town, California 12345</div>
                 </div>
-                <div>
+                <div class="botExtraIcon">
                     <img src="images/phone.svg" alt="">
                     <div>555-555-5555</div>
                 </div>
-                <div>
+                <div class="botExtraIcon">
                     <img src="images/email-outline.svg" alt="">
                     <div>ashleywilliams.is.not.real@gmail.com</div>
                 </div>
@@ -127,8 +133,14 @@
                     <img class="botIcon" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/twitter/twitter-original.svg" alt="twitter"/>
                 </div>
             </div>
-            <div>
-                <img src="" alt="">
+            <div class="botImgDiv">
+                <picture>
+                    <source
+                        srcset="images/lesswidedog.jpg"
+                        media="(max-width: 768px)"
+                    >
+                    <img class="botImage" src="images/widedog.jpg" alt="">
+                </picture>
             </div>
         </footer>
     </div>
